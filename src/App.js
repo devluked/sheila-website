@@ -14,11 +14,11 @@ function App() {
   return (
     <div className="App">
       <div onClick={() => toggleNav(!isNavOpen)}>
-        <Hamburger toggled={isNavOpen} toggle={setOpen} />
+        <Hamburger />
       </div>
       <HamburgerNav isNavOpen={isNavOpen} />
 
-      <Home hidden={isNavOpen} />
+      <Home />
     </div>
   );
 }

@@ -11,52 +11,109 @@
     background: url("../photos/lambo.png");
     position: absolute;
     z-index: -1; }
-  .home-page-container .home-text-main {
-    color: white; }
+    @media screen and (max-width: 900px) {
+      .home-page-container .home-page-bg {
+        background-position-x: 20%;
+        background-position-y: 75%; } }
+  .home-page-container #home-text-main {
+    color: white;
+    margin: 1rem;
+    font-size: 8rem; }
+    @media screen and (max-width: 1840px) {
+      .home-page-container #home-text-main {
+        font-size: 7rem; } }
+    @media screen and (max-width: 1200px) {
+      .home-page-container #home-text-main {
+        font-size: 6rem; } }
+    @media screen and (max-width: 900px) {
+      .home-page-container #home-text-main {
+        font-size: 2rem;
+        margin: 0.5rem; } }
   .home-page-container .home-text-container {
     display: flex;
     align-items: center;
     flex-direction: row;
     position: relative;
     justify-content: center; }
+    @media screen and (max-width: 900px) {
+      .home-page-container .home-text-container {
+        top: 15%;
+        flex-direction: column; } }
+    @media screen and (max-width: 900px) {
+      .home-page-container .home-text-container .main-text-container {
+        display: flex;
+        flex-direction: row; } }
     .home-page-container .home-text-container .white-box {
       background-color: white;
       height: 95vh;
-      width: 25%;
+      width: 500px;
       margin-left: 8rem;
       display: flex;
       flex-direction: column; }
+      @media screen and (max-width: 1200px) {
+        .home-page-container .home-text-container .white-box {
+          width: 350px; }
+          .home-page-container .home-text-container .white-box > * {
+            padding-top: 3rem; } }
+      @media screen and (max-width: 900px) {
+        .home-page-container .home-text-container .white-box {
+          all: unset;
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding-top: 0; } }
+      .home-page-container .home-text-container .white-box .button-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly; }
       .home-page-container .home-text-container .white-box #verify-text {
         color: #424242;
         margin-top: 50%;
         font-size: 3rem; }
+        @media screen and (max-width: 1200px) {
+          .home-page-container .home-text-container .white-box #verify-text {
+            font-size: 2rem; } }
+        @media screen and (max-width: 900px) {
+          .home-page-container .home-text-container .white-box #verify-text {
+            font-size: 1.75rem;
+            margin: 1rem 0 1rem 0;
+            color: white; } }
+      .home-page-container .home-text-container .white-box #years-text {
+        font-weight: 2;
+        font-size: 3rem;
+        margin: 1rem;
+        color: #424242; }
+        @media screen and (max-width: 1200px) {
+          .home-page-container .home-text-container .white-box #years-text {
+            font-size: 2rem; } }
+        @media screen and (max-width: 900px) {
+          .home-page-container .home-text-container .white-box #years-text {
+            font-size: 1.75rem;
+            padding-top: 0px;
+            color: white; } }
+      .home-page-container .home-text-container .white-box #i-can-text {
+        margin: 1rem;
+        font-size: 2rem;
+        color: #424242;
+        font-weight: lighter; }
+        @media screen and (max-width: 1200px) {
+          .home-page-container .home-text-container .white-box #i-can-text {
+            font-size: 1.25rem; } }
+        @media screen and (max-width: 900px) {
+          .home-page-container .home-text-container .white-box #i-can-text {
+            padding-top: 0px;
+            font-size: 1rem;
+            color: white; } }
       .home-page-container .home-text-container .white-box .underline:after {
         content: "";
         display: block;
         width: 20%;
         height: 4px;
         background-color: red; }
-    .home-page-container .home-text-container h1 {
-      margin: 1rem;
-      font-size: 8rem; }
-    .home-page-container .home-text-container h3 {
-      font-weight: 2;
-      font-size: 3rem;
-      margin: 1rem;
-      color: #424242; }
-    .home-page-container .home-text-container h4 {
-      margin: 1rem;
-      font-size: 2rem;
-      color: #424242;
-      font-weight: lighter; }
     .home-page-container .home-text-container span {
       margin: 1rem; }
-
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 
 .hamburger-menu {
   position: absolute;
@@ -69,7 +126,8 @@ html {
   height: 100%;
   width: 100%;
   margin: 0;
-  font-family: "arial"; }
+  font-family: "arial";
+  position: fixed; }
 
 .hamburger-react {
   height: 0px !important;

@@ -1,5 +1,5 @@
 @import "./variables";
-
+@import "./config";
 .home-page-container {
   flex-direction: column;
   display: flex;
@@ -12,12 +12,31 @@
     height: 100%;
     width: 100%;
     background: url("../photos/lambo.png");
+
+    @include media-sm-max {
+      background-position-x: 20%;
+      background-position-y: 75%;
+    }
+
     position: absolute;
     z-index: -1;
   }
 
-  .home-text-main {
+  #home-text-main {
     color: white;
+    @include media-xl-max {
+      font-size: 7rem;
+    }
+    @include media-med-max {
+      font-size: 6rem;
+    }
+
+    @include media-sm-max {
+      font-size: 2rem;
+      margin: 0.5rem;
+    }
+    margin: 1rem;
+    font-size: 8rem;
   }
 
   .home-text-container {
@@ -26,19 +45,91 @@
     flex-direction: row;
     position: relative;
     justify-content: center;
+    @include media-sm-max {
+      top: 15%;
+      flex-direction: column;
+    }
+
+    .main-text-container {
+      @include media-sm-max {
+        display: flex;
+        flex-direction: row;
+      }
+    }
 
     .white-box {
       background-color: white;
       height: 95vh;
-      width: 25%;
+      width: 500px;
       margin-left: 8rem;
       display: flex;
       flex-direction: column;
+      @include media-med-max {
+        width: 350px;
+        > * {
+          padding-top: 3rem;
+        }
+      }
+      @include media-sm-max {
+        all: unset;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0;
+      }
+
+      .button-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
 
       #verify-text {
         color: rgb(66, 66, 66);
         margin-top: 50%;
         font-size: 3rem;
+        @include media-med-max {
+          font-size: 2rem;
+        }
+
+        @include media-sm-max {
+          font-size: 1.75rem;
+          margin: 1rem 0 1rem 0;
+          color: white;
+        }
+      }
+
+      #years-text {
+        font-weight: 2;
+        font-size: 3rem;
+        margin: 1rem;
+        color: rgb(66, 66, 66);
+        @include media-med-max {
+          font-size: 2rem;
+        }
+
+        @include media-sm-max {
+          font-size: 1.75rem;
+          padding-top: 0px;
+          color: white;
+        }
+      }
+
+      #i-can-text {
+        margin: 1rem;
+        font-size: 2rem;
+        color: rgb(66, 66, 66);
+        font-weight: lighter;
+        @include media-med-max {
+          font-size: 1.25rem;
+        }
+        @include media-sm-max {
+          padding-top: 0px;
+          font-size: 1rem;
+          color: white;
+        }
       }
 
       .underline:after {
@@ -48,25 +139,6 @@
         height: 4px;
         background-color: red;
       }
-    }
-
-    h1 {
-      margin: 1rem;
-      font-size: 8rem;
-    }
-
-    h3 {
-      font-weight: 2;
-      font-size: 3rem;
-      margin: 1rem;
-      color: rgb(66, 66, 66);
-    }
-
-    h4 {
-      margin: 1rem;
-      font-size: 2rem;
-      color: rgb(66, 66, 66);
-      font-weight: lighter;
     }
 
     span {
