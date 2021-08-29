@@ -1,5 +1,7 @@
 @import "./home.scss";
+@import "./contact.scss";
 @import "./config";
+@import "./pricing.scss";
 @import "./hamburgernav";
 
 body,
@@ -9,9 +11,41 @@ html {
   margin: 0;
   font-family: "arial";
   position: fixed;
+  font-family: "Lora", serif;
+  animation: fadeInAnimation 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  a {
+    transition: all 1s ease;
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 300;
 }
 
 .hamburger-react {
   height: 0px !important;
   z-index: 5;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

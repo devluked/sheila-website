@@ -1,0 +1,138 @@
+@import "./variables";
+@import "./config";
+.pricing-page-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  .pricing-page-bg {
+    filter: grayscale(100%);
+    height: 100%;
+    width: 100%;
+    background: url("../photos/bigstock-Surf-City-Huntington-Beach-Pie-24727454.jpeg")
+      no-repeat center center fixed;
+    position: absolute;
+    background-size: cover;
+    z-index: -1;
+
+    @include media-sm-max {
+      background-position-x: 20%;
+      background-position-y: 75%;
+    }
+  }
+
+  .pricing-content {
+    #hover-text {
+      margin-top: 10%;
+      color: white;
+    }
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    .projects {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 7rem;
+
+      @include fadeIn;
+
+      .projects-container {
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10%;
+
+        .projects-project {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 60%;
+          position: relative;
+          border-bottom: 5px solid white;
+          overflow: hidden;
+          cursor: pointer;
+          margin: 0 2rem 2rem 2rem;
+          height: 200px;
+
+          .icons-container {
+            opacity: 0.9;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: white;
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: 0.5s ease;
+            border-top-right-radius: 1rem;
+            border-top-left-radius: 1rem;
+          }
+
+          &:hover .icons-container {
+            height: 100%;
+          }
+
+          img {
+            max-width: 100%;
+            max-height: 100%;
+            padding-bottom: 3rem;
+            color: white;
+          }
+
+          hr {
+            width: 100%;
+          }
+
+          h1 {
+            font-size: 1rem;
+            margin-bottom: 0px;
+            color: white;
+          }
+
+          .icons {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            justify-content: space-evenly;
+            font-size: 1rem;
+
+            a {
+              color: rgb(66, 66, 66);
+
+              &:hover {
+                color: red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

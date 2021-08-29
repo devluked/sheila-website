@@ -1,22 +1,24 @@
 import StyledNav from "./NavMenu.styled";
 import { useState } from "react";
+import Home from "../pages/home";
 
 const HamburgerNav = (props) => {
+  const [currentPage, togglePage] = useState("home");
   return (
     <>
       <div className="hamburger-menu">
         <StyledNav showNav={props.isNavOpen}>
           <p>
-            <a>Home</a>
+            <a href="/">Home</a>
           </p>
           <p>
-            <a>Contact</a>
+            <a href="/contact">Contact</a>
           </p>
           <p>
-            <a>Pricing</a>
+            <a href="/pricing">Pricing</a>
           </p>
           <p>
-            <a>Biography</a>
+            <a href="/bio">Biography</a>
           </p>
         </StyledNav>
       </div>

@@ -2,10 +2,10 @@
   transition: all 0.5s ease-in-out;
 }
 
-@mixin flexCenter($flexDirection) {
-  display: flex;
-  align-items: center;
-  flex-direction: $flexDirection;
+@mixin fadeIn {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @mixin media-md {
@@ -39,6 +39,18 @@
 }
 @mixin media-sm-max {
   @media screen and (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin media-xsm-max {
+  @media screen and (max-width: 720px) {
+    @content;
+  }
+}
+
+@mixin media-xxsm-max {
+  @media screen and (max-width: 586px) {
     @content;
   }
 }

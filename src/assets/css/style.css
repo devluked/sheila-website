@@ -107,6 +107,7 @@
             font-size: 1rem;
             color: white; } }
       .home-page-container .home-text-container .white-box .underline:after {
+        margin-top: 2rem;
         content: "";
         display: block;
         width: 20%;
@@ -114,6 +115,201 @@
         background-color: red; }
     .home-page-container .home-text-container span {
       margin: 1rem; }
+
+.contact-page-container {
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  position: relative; }
+  .contact-page-container .contact-page-bg {
+    filter: grayscale(100%);
+    height: 100%;
+    width: 100%;
+    background: url("../photos/car.jpeg") no-repeat center center fixed;
+    position: absolute;
+    background-size: cover;
+    z-index: -1; }
+    @media screen and (max-width: 900px) {
+      .contact-page-container .contact-page-bg {
+        background-position-x: 20%;
+        background-position-y: 75%; } }
+  .contact-page-container .contact-page-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    margin-top: 10%;
+    font-weight: 300;
+    font-family: "Lora", serif; }
+    .contact-page-container .contact-page-text .contact-row {
+      margin: 2rem;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center; }
+      @media screen and (max-width: 720px) {
+        .contact-page-container .contact-page-text .contact-row {
+          flex-direction: column; } }
+      .contact-page-container .contact-page-text .contact-row h2 {
+        margin: 0 2rem 0 0; }
+      .contact-page-container .contact-page-text .contact-row i {
+        margin-left: 2rem;
+        transform: scaleX(-1); }
+  @media screen and (max-width: 586px) {
+    .contact-page-container #schedule-text {
+      font-size: 1.5rem; } }
+  @media screen and (max-width: 586px) {
+    .contact-page-container #list-text {
+      font-size: 0.9rem; } }
+  .contact-page-container .contact-set {
+    display: flex;
+    flex-direction: row; }
+    @media screen and (max-width: 720px) {
+      .contact-page-container .contact-set {
+        margin: 1rem; } }
+  .contact-page-container h1,
+  .contact-page-container h2,
+  .contact-page-container h3,
+  .contact-page-container h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase; }
+  .contact-page-container #home-text-main {
+    color: white;
+    margin: 1rem;
+    font-size: 8rem; }
+    @media screen and (max-width: 1840px) {
+      .contact-page-container #home-text-main {
+        font-size: 7rem; } }
+    @media screen and (max-width: 1200px) {
+      .contact-page-container #home-text-main {
+        font-size: 6rem; } }
+    @media screen and (max-width: 900px) {
+      .contact-page-container #home-text-main {
+        font-size: 2rem;
+        margin: 0.5rem; } }
+  .contact-page-container .home-text-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    justify-content: center; }
+    @media screen and (max-width: 900px) {
+      .contact-page-container .home-text-container {
+        top: 15%;
+        flex-direction: column; } }
+    @media screen and (max-width: 900px) {
+      .contact-page-container .home-text-container .main-text-container {
+        display: flex;
+        flex-direction: row; } }
+
+.pricing-page-container {
+  height: 100vh;
+  width: 100%;
+  position: relative; }
+  .pricing-page-container h1,
+  .pricing-page-container h2,
+  .pricing-page-container h3,
+  .pricing-page-container h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase; }
+  .pricing-page-container .pricing-page-bg {
+    filter: grayscale(100%);
+    height: 100%;
+    width: 100%;
+    background: url("../photos/bigstock-Surf-City-Huntington-Beach-Pie-24727454.jpeg") no-repeat center center fixed;
+    position: absolute;
+    background-size: cover;
+    z-index: -1; }
+    @media screen and (max-width: 900px) {
+      .pricing-page-container .pricing-page-bg {
+        background-position-x: 20%;
+        background-position-y: 75%; } }
+  .pricing-page-container .pricing-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex; }
+    .pricing-page-container .pricing-content #hover-text {
+      margin-top: 10%;
+      color: white; }
+    .pricing-page-container .pricing-content .projects {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 7rem;
+      animation: fadeInAnimation ease 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards; }
+      .pricing-page-container .pricing-content .projects .projects-container {
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10%; }
+        .pricing-page-container .pricing-content .projects .projects-container .projects-project {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 60%;
+          position: relative;
+          border-bottom: 5px solid white;
+          overflow: hidden;
+          cursor: pointer;
+          margin: 0 2rem 2rem 2rem;
+          height: 200px; }
+          .pricing-page-container .pricing-content .projects .projects-container .projects-project .icons-container {
+            opacity: 0.9;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: white;
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: 0.5s ease;
+            border-top-right-radius: 1rem;
+            border-top-left-radius: 1rem; }
+          .pricing-page-container .pricing-content .projects .projects-container .projects-project:hover .icons-container {
+            height: 100%; }
+          .pricing-page-container .pricing-content .projects .projects-container .projects-project img {
+            max-width: 100%;
+            max-height: 100%;
+            padding-bottom: 3rem;
+            color: white; }
+          .pricing-page-container .pricing-content .projects .projects-container .projects-project hr {
+            width: 100%; }
+          .pricing-page-container .pricing-content .projects .projects-container .projects-project h1 {
+            font-size: 1rem;
+            margin-bottom: 0px;
+            color: white; }
+          .pricing-page-container .pricing-content .projects .projects-container .projects-project .icons {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            justify-content: space-evenly;
+            font-size: 1rem; }
+            .pricing-page-container .pricing-content .projects .projects-container .projects-project .icons a {
+              color: #424242; }
+              .pricing-page-container .pricing-content .projects .projects-container .projects-project .icons a:hover {
+                color: red; }
 
 .hamburger-menu {
   position: absolute;
@@ -127,8 +323,34 @@ html {
   width: 100%;
   margin: 0;
   font-family: "arial";
-  position: fixed; }
+  position: fixed;
+  font-family: "Lora", serif;
+  animation: fadeInAnimation 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+  body a,
+  html a {
+    transition: all 1s ease;
+    text-decoration: none;
+    color: white; }
+    body a:hover,
+    html a:hover {
+      color: red; }
+
+h1,
+h2,
+h3,
+h4,
+a {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 300; }
 
 .hamburger-react {
   height: 0px !important;
   z-index: 5; }
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }

@@ -22,8 +22,12 @@ const Home = (props) => {
             I can inspect any non-salvaged vehicle, dealers are welcome.
           </h4>
           <div className="button-container">
-            <Button onClick={() => console.log("hi")}>Contact Me</Button>
-            <Button>Pricing</Button>
+            <a href="/contact">
+              <Button>Contact Me</Button>
+            </a>
+            <a href="/pricing">
+              <Button>Pricing</Button>
+            </a>
           </div>
         </div>
       </div>

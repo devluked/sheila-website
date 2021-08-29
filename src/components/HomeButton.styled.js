@@ -22,6 +22,10 @@ const Button = styled.button`
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0 5px 15px red;
   }
+
+  a {
+    color: black;
+  }
 `;
 
 export default Button;
