@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import React from "react";
 import "./assets/css/style.css";
 import Home from "./pages/home";
 import HamburgerNav from "./components/hamburgermenu";

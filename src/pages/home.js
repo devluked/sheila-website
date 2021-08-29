@@ -6,6 +6,7 @@ const Home = (props) => {
       style={{ zIndex: props.hidden ? -1 : 1 }}
       className="home-page-container"
     >
+      <div className="home-page-bg"></div>
       <div className="home-text-container">
         <h1 className="home-text-main">
           Mobile <br /> Vehicle <br /> Verifier
