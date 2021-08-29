@@ -1,0 +1,70 @@
+.home-page-container {
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  filter: grayscale(100%);
+  background-image: url("../photos/lambo.png"); }
+  .home-page-container .home-text-main {
+    color: white; }
+  .home-page-container .home-text-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    justify-content: center; }
+    .home-page-container .home-text-container .white-box {
+      background-color: white;
+      height: 95vh;
+      width: 25%;
+      margin-left: 8rem;
+      display: flex;
+      flex-direction: column; }
+      .home-page-container .home-text-container .white-box #verify-text {
+        color: #424242;
+        margin-top: 50%;
+        font-size: 3rem; }
+      .home-page-container .home-text-container .white-box .underline:after {
+        content: "";
+        display: block;
+        width: 20%;
+        height: 4px;
+        background-color: red; }
+    .home-page-container .home-text-container h1 {
+      margin: 1rem;
+      font-size: 8rem; }
+    .home-page-container .home-text-container h3 {
+      font-weight: 2;
+      font-size: 3rem;
+      margin: 1rem;
+      color: #424242; }
+    .home-page-container .home-text-container h4 {
+      margin: 1rem;
+      font-size: 2rem;
+      color: #424242;
+      font-weight: lighter; }
+    .home-page-container .home-text-container span {
+      margin: 1rem; }
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.hamburger-menu {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; }
+  .hamburger-menu .hamburger-react {
+    height: 0px !important;
+    z-index: 5; }
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: "arial"; }
