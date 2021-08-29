@@ -19,6 +19,7 @@ const Home = (props) => {
           <h4>I can inspect any non-salvaged vehicle, dealers welcome.</h4>
           <div className="button-container">
             <Button>Contact Me</Button>
+            <Button>Pricing</Button>
           </div>
         </div>
       </div>

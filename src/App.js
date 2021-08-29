@@ -4,15 +4,21 @@ import "./assets/css/style.css";
 import Home from "./pages/home";
 import HamburgerNav from "./components/hamburgermenu";
 import { useState } from "react";
+import { Squash as Hamburger } from "hamburger-react";
 
 function App() {
-  const [isZindex, toggleZindex] = useState(true);
+  const [isNavOpen, toggleNav] = useState(false);
+  const setOpen = () => {
+    toggleNav(!isNavOpen);
+  };
   return (
     <div className="App">
-      <div onClick={() => toggleZindex(!isZindex)}>
-        <HamburgerNav />
+      <div onClick={() => toggleNav(!isNavOpen)}>
+        <Hamburger toggled={isNavOpen} toggle={setOpen} />
       </div>
-      <Home hidden={isZindex} />
+      <HamburgerNav isNavOpen={isNavOpen} />
+
+      <Home hidden={isNavOpen} />
     </div>
   );
 }

@@ -1,17 +1,10 @@
-import { Squash as Hamburger } from "hamburger-react";
 import StyledNav from "./NavMenu.styled";
 import { useState } from "react";
 
-const HamburgerNav = () => {
-  const [isNavOpen, toggleNav] = useState(false);
-  const setOpen = () => {
-    toggleNav(!isNavOpen);
-  };
+const HamburgerNav = (props) => {
   return (
     <div className="hamburger-menu">
-      <Hamburger toggled={isNavOpen} toggle={setOpen} />
-
-      <StyledNav showNav={isNavOpen}>
+      <StyledNav showNav={props.isNavOpen}>
         <p>
           <a>Home</a>
         </p>
