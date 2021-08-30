@@ -7,7 +7,7 @@ const Pricing = () => {
       <div className="pricing-page-bg"></div>
 
       <div className="pricing-content">
-        <h1 id="hover-text">Call for a quote</h1>
+        <h1 id="main-text">Call for a quote</h1>
         <h2>Prices from $60 - $100</h2>
         <h2>Multi-vehicle discount</h2>
         <section className="projects">

@@ -21,6 +21,9 @@
       .home-page-container .home-page-bg {
         background-position-x: 20%;
         background-position-y: -15%; } }
+    @media screen and (max-width: 586px) {
+      .home-page-container .home-page-bg {
+        background-position-y: -7%; } }
   .home-page-container #home-text-main {
     color: white;
     margin: 1rem;
@@ -147,8 +150,8 @@
     z-index: -1; }
     @media screen and (max-width: 900px) {
       .contact-page-container .contact-page-bg {
-        background-position-x: 20%;
-        background-position-y: 75%; } }
+        background-position-x: 50%;
+        background-position-y: 75% !important; } }
   .contact-page-container .contact-page-text {
     display: flex;
     align-items: center;
@@ -164,6 +167,7 @@
     .contact-page-container .contact-page-text h4 {
       color: #00032c !important; }
     .contact-page-container .contact-page-text #by-apt-text {
+      font-weight: bold;
       margin: 1rem; }
     .contact-page-container .contact-page-text .contact-row {
       margin: 2rem;
@@ -184,13 +188,19 @@
         transform: scaleX(-1); }
   @media screen and (max-width: 586px) {
     .contact-page-container #schedule-text {
-      font-size: 1.5rem; } }
+      margin-top: 10%;
+      font-size: 1.3rem; } }
   @media screen and (max-width: 586px) {
     .contact-page-container #list-text {
+      margin: 1rem;
       font-size: 0.9rem; } }
   .contact-page-container .contact-set {
     display: flex;
     flex-direction: row; }
+    @media screen and (max-width: 586px) {
+      .contact-page-container .contact-set #contact-email,
+      .contact-page-container .contact-set #contact-phone {
+        font-size: 1.25rem; } }
     @media screen and (max-width: 720px) {
       .contact-page-container .contact-set {
         margin: 1rem; } }
@@ -239,12 +249,12 @@
   .pricing-page-container h3,
   .pricing-page-container h4 {
     font-family: "Montserrat", sans-serif;
-    font-weight: 300;
+    font-weight: bold;
     text-transform: uppercase; }
-  .pricing-page-container h1 {
-    font-size: 3rem; }
-  .pricing-page-container h1,
   .pricing-page-container h2 {
+    color: white; }
+  .pricing-page-container h1 {
+    font-size: 3rem;
     color: #3a3c5c !important;
     font-weight: bold; }
   .pricing-page-container #payment {
@@ -262,9 +272,12 @@
     align-items: center;
     justify-content: center;
     display: flex; }
-    .pricing-page-container .pricing-content #hover-text {
-      margin-top: 10%;
-      color: white; }
+    .pricing-page-container .pricing-content #main-text {
+      margin-top: 10%; }
+      @media screen and (max-width: 586px) {
+        .pricing-page-container .pricing-content #main-text {
+          margin-top: 25%;
+          font-size: 2.5rem; } }
     .pricing-page-container .pricing-content .projects {
       display: flex;
       align-items: center;
@@ -303,11 +316,19 @@
               .pricing-page-container .pricing-content .projects .projects-container .projects-project .payment-icons .payment-container img {
                 filter: brightness(9) contrast(6) hue-rotate(10deg) saturate(4.9); }
               .pricing-page-container .pricing-content .projects .projects-container .projects-project .payment-icons .payment-container #zelle {
+                margin-right: -1rem;
                 width: 100px; }
+                @media screen and (max-width: 586px) {
+                  .pricing-page-container .pricing-content .projects .projects-container .projects-project .payment-icons .payment-container #zelle {
+                    width: 85px; } }
               .pricing-page-container .pricing-content .projects .projects-container .projects-project .payment-icons .payment-container #venmo {
+                margin-top: 0.2rem;
                 width: 100px; }
+                @media screen and (max-width: 586px) {
+                  .pricing-page-container .pricing-content .projects .projects-container .projects-project .payment-icons .payment-container #venmo {
+                    width: 85px; } }
           .pricing-page-container .pricing-content .projects .projects-container .projects-project hr {
-            width: 100%; }
+            width: 90%; }
           .pricing-page-container .pricing-content .projects .projects-container .projects-project h1 {
             font-size: 2rem;
             margin-bottom: 0px;

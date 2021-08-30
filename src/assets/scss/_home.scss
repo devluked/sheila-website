@@ -27,6 +27,10 @@
       background-position-y: -15%;
     }
 
+    @include media-xxsm-max {
+      background-position-y: -7%;
+    }
+
     position: absolute;
     z-index: -1;
   }

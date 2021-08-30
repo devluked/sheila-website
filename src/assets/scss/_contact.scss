@@ -17,8 +17,8 @@
     z-index: -1;
 
     @include media-sm-max {
-      background-position-x: 20%;
-      background-position-y: 75%;
+      background-position-x: 50%;
+      background-position-y: 75% !important;
     }
   }
 
@@ -39,6 +39,7 @@
     }
 
     #by-apt-text {
+      font-weight: bold;
       margin: 1rem;
     }
 
@@ -69,12 +70,14 @@
 
   #schedule-text {
     @include media-xxsm-max {
-      font-size: 1.5rem;
+      margin-top: 10%;
+      font-size: 1.3rem;
     }
   }
 
   #list-text {
     @include media-xxsm-max {
+      margin: 1rem;
       font-size: 0.9rem;
     }
   }
@@ -82,6 +85,13 @@
   .contact-set {
     display: flex;
     flex-direction: row;
+
+    #contact-email,
+    #contact-phone {
+      @include media-xxsm-max {
+        font-size: 1.25rem;
+      }
+    }
 
     @include media-xsm-max {
       margin: 1rem;
