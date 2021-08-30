@@ -1,27 +1,32 @@
+import venmo from "../assets/photos/icons/app-icon.png";
+import zelle from "../assets/photos/icons/Zelle-Symbol.png";
+
 const Pricing = () => {
   return (
     <div className="pricing-page-container">
       <div className="pricing-page-bg"></div>
 
       <div className="pricing-content">
-        <h1 id="hover-text">Hover over the boxes below to see prices</h1>
+        <h1 id="hover-text">Call for a quote</h1>
+        <h2>Prices from $60 - $100</h2>
+        <h2>Multi-vehicle discount</h2>
         <section className="projects">
           <div className="projects-container">
             <div className="projects-project">
-              <h1>TYPE 1</h1>
+              <h1 id="payment">Payment types</h1>
               <hr />
-              <img />
-              <div className="icons-container">
-                <div className="icons">
-                  <a target="_blank" href="https://echo-radio.herokuapp.com/">
-                    <i className="eye icon"></i>Preview
-                  </a>
-                  <a
-                    target="_blank"
-                    href="https://github.com/devluked/echo-radio"
-                  >
-                    <i className="alternate github icon"></i>Github
-                  </a>
+              <div className="payment-icons">
+                <div className="payment-container">
+                  <img id="zelle" src={zelle} />
+                </div>
+                <div className="payment-container">
+                  <h1>Card</h1>
+                </div>
+                <div className="payment-container">
+                  <img id="venmo" src={venmo} />
+                </div>
+                <div className="payment-container">
+                  <h1>Cash</h1>
                 </div>
               </div>
             </div>

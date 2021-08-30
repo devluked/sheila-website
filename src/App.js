@@ -4,6 +4,7 @@ import "./assets/css/style.css";
 import Home from "./pages/home";
 import Contact from "./pages/contact";
 import Pricing from "./pages/pricing";
+import About from "./pages/about";
 import HamburgerNav from "./components/hamburgermenu";
 import { useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
@@ -30,6 +31,9 @@ function App() {
           </Route>
           <Route path="/pricing">
             <Pricing />
+          </Route>
+          <Route path="/about">
+            <About />
           </Route>
         </Switch>
       </div>

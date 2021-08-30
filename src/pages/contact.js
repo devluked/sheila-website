@@ -17,8 +17,9 @@ const Contact = () => {
             <h2 id="contact-email">sheiladmv@gmail.com</h2>
           </div>
         </div>
-        <h4>
-          Orange County and LA County, by appointment only. I'll go to you.
+        <h4 id="by-apt-text">
+          Orange, LA, and Riverside Counties, by appointment only. I come to
+          you.
         </h4>
       </div>
     </div>

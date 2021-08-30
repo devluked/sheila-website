@@ -18,7 +18,7 @@ const HamburgerNav = (props) => {
             <a href="/pricing">Pricing</a>
           </p>
           <p>
-            <a href="/bio">Biography</a>
+            <a href="/about">About Me</a>
           </p>
         </StyledNav>
       </div>

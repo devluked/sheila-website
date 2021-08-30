@@ -14,20 +14,28 @@
     text-transform: uppercase;
   }
 
+  h1 {
+    font-size: 3rem;
+  }
+
+  h1,
+  h2 {
+    color: #3a3c5c !important;
+    font-weight: bold;
+  }
+
+  #payment {
+    color: white !important;
+  }
+
   .pricing-page-bg {
     filter: grayscale(100%);
     height: 100%;
     width: 100%;
-    background: url("../photos/bigstock-Surf-City-Huntington-Beach-Pie-24727454.jpeg")
-      no-repeat center center fixed;
+    background: url("../photos/cristofer-jeschke--fw7ypjhifk-unsplash__5710x3807___v1220x813.jpeg");
     position: absolute;
     background-size: cover;
     z-index: -1;
-
-    @include media-sm-max {
-      background-position-x: 20%;
-      background-position-y: 75%;
-    }
   }
 
   .pricing-content {
@@ -46,8 +54,6 @@
       justify-content: center;
       padding-bottom: 7rem;
 
-      @include fadeIn;
-
       .projects-container {
         width: 60vw;
         display: flex;
@@ -61,38 +67,38 @@
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          width: 60%;
           position: relative;
-          border-bottom: 5px solid white;
           overflow: hidden;
-          cursor: pointer;
           margin: 0 2rem 2rem 2rem;
-          height: 200px;
 
-          .icons-container {
-            opacity: 0.9;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: white;
-            overflow: hidden;
-            width: 100%;
-            height: 0;
-            transition: 0.5s ease;
-            border-top-right-radius: 1rem;
-            border-top-left-radius: 1rem;
-          }
+          .payment-icons {
+            display: flex;
+            flex-direction: row;
+            .payment-container {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              color: white;
+              padding: 0.75rem;
 
-          &:hover .icons-container {
-            height: 100%;
-          }
-
-          img {
-            max-width: 100%;
-            max-height: 100%;
-            padding-bottom: 3rem;
-            color: white;
+              h1 {
+                text-transform: initial !important;
+                margin: 0;
+                color: WHITE !important;
+                font-weight: 900 !important;
+              }
+              img {
+                filter: brightness(9) contrast(6) hue-rotate(10deg)
+                  saturate(4.9);
+              }
+              #zelle {
+                width: 100px;
+              }
+              #venmo {
+                width: 100px;
+              }
+            }
           }
 
           hr {
@@ -100,36 +106,9 @@
           }
 
           h1 {
-            font-size: 1rem;
+            font-size: 2rem;
             margin-bottom: 0px;
             color: white;
-          }
-
-          .icons {
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            text-align: center;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            justify-content: space-evenly;
-            font-size: 1rem;
-
-            a {
-              color: rgb(66, 66, 66);
-
-              &:hover {
-                color: red;
-              }
-            }
           }
         }
       }

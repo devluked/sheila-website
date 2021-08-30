@@ -7,6 +7,15 @@
   width: 100%;
   position: relative;
 
+  @include media-sm-max {
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: #3a3c5c !important;
+    }
+  }
+
   .home-page-bg {
     filter: grayscale(100%);
     height: 100%;
@@ -15,7 +24,7 @@
 
     @include media-sm-max {
       background-position-x: 20%;
-      background-position-y: 75%;
+      background-position-y: -15%;
     }
 
     position: absolute;
@@ -34,6 +43,7 @@
     @include media-sm-max {
       font-size: 2rem;
       margin: 0.5rem;
+      color: #3a3c5c !important;
     }
     margin: 1rem;
     font-size: 8rem;
@@ -95,7 +105,8 @@
         }
 
         @include media-sm-max {
-          font-size: 1.75rem;
+          display: none;
+          font-size: 2rem;
           margin: 1rem 0 1rem 0;
           color: white;
         }
@@ -111,7 +122,7 @@
         }
 
         @include media-sm-max {
-          font-size: 1.75rem;
+          font-size: 1.5rem;
           padding-top: 0px;
           color: white;
         }
@@ -120,16 +131,22 @@
       #i-can-text {
         margin: 1rem;
         font-size: 2rem;
+
         color: rgb(66, 66, 66);
         font-weight: lighter;
         @include media-med-max {
           font-size: 1.25rem;
         }
         @include media-sm-max {
-          padding-top: 0px;
+          padding: 1rem 0 0 0;
           font-size: 1rem;
+          margin: 1rem;
           color: white;
         }
+      }
+
+      .underline {
+        padding: 0;
       }
 
       .underline:after {
@@ -144,6 +161,10 @@
 
     span {
       margin: 1rem;
+      @include media-sm-max {
+        margin: 0;
+        padding: 0;
+      }
     }
   }
 }

@@ -13,13 +13,14 @@ const Home = (props) => {
 
         <div className="white-box">
           <span className="underline">
-            <h2 id="verify-text">Verify Your Vehicle</h2>
+            <h2 id="verify-text">I Will Verify Your Vehicle On Site</h2>
           </span>
           <h3 id="years-text">
-            With over 30 years of experience in Southern California,
+            With over 35 years of experience in Southern California,
           </h3>
           <h4 id="i-can-text">
-            I can inspect any non-salvaged vehicle, dealers are welcome.
+            I can inspect any vehicle except salvaged, junk or
+            import/gray-market vehicles. Dealers are welcome.
           </h4>
           <div className="button-container">
             <a href="/contact">
