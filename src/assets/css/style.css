@@ -85,6 +85,9 @@
         @media screen and (max-width: 1200px) {
           .home-page-container .home-text-container .white-box #verify-text {
             font-size: 2rem; } }
+        @media screen and (max-height: 776px) {
+          .home-page-container .home-text-container .white-box #verify-text {
+            margin-top: 25%; } }
         @media screen and (max-width: 900px) {
           .home-page-container .home-text-container .white-box #verify-text {
             display: none;

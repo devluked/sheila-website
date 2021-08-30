@@ -32,6 +32,12 @@
   }
 }
 
+@mixin media-lg-max-height {
+  @media screen and (max-height: 776px) {
+    @content;
+  }
+}
+
 @mixin media-med-max {
   @media screen and (max-width: 1200px) {
     @content;

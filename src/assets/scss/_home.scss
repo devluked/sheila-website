@@ -107,6 +107,9 @@
         @include media-med-max {
           font-size: 2rem;
         }
+        @include media-lg-max-height {
+          margin-top: 25%;
+        }
 
         @include media-sm-max {
           display: none;
