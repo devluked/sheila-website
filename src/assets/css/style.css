@@ -9,7 +9,7 @@
     .home-page-container h2,
     .home-page-container h3,
     .home-page-container h4 {
-      color: #3a3c5c !important; } }
+      color: white !important; } }
   .home-page-container .home-page-bg {
     filter: grayscale(100%);
     height: 100%;
@@ -17,6 +17,16 @@
     background: url("../photos/lambo.png");
     position: absolute;
     z-index: -1; }
+    .home-page-container .home-page-bg:after {
+      content: " ";
+      z-index: 10;
+      display: block;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.5); }
     @media screen and (max-width: 900px) {
       .home-page-container .home-page-bg {
         background-position-x: 20%;
@@ -34,11 +44,14 @@
     @media screen and (max-width: 1200px) {
       .home-page-container #home-text-main {
         font-size: 6rem; } }
+    @media screen and (max-height: 767px) {
+      .home-page-container #home-text-main {
+        font-size: 6rem; } }
     @media screen and (max-width: 900px) {
       .home-page-container #home-text-main {
         font-size: 2rem;
         margin: 0.5rem;
-        color: #3a3c5c !important; } }
+        color: lightblue !important; } }
   .home-page-container .home-text-container {
     display: flex;
     align-items: center;
@@ -85,7 +98,7 @@
         @media screen and (max-width: 1200px) {
           .home-page-container .home-text-container .white-box #verify-text {
             font-size: 2rem; } }
-        @media screen and (max-height: 776px) {
+        @media screen and (max-height: 900px) {
           .home-page-container .home-text-container .white-box #verify-text {
             margin-top: 25%; } }
         @media screen and (max-width: 900px) {
@@ -107,6 +120,9 @@
             font-size: 1.5rem;
             padding-top: 0px;
             color: white; } }
+        @media screen and (max-height: 767px) {
+          .home-page-container .home-text-container .white-box #years-text {
+            font-size: 2rem; } }
       .home-page-container .home-text-container .white-box #i-can-text {
         margin: 1rem;
         font-size: 2rem;
@@ -121,6 +137,9 @@
             font-size: 1rem;
             margin: 1rem;
             color: white; } }
+        @media screen and (max-height: 767px) {
+          .home-page-container .home-text-container .white-box #i-can-text {
+            font-size: 1.5rem; } }
       .home-page-container .home-text-container .white-box .underline {
         padding: 0; }
       .home-page-container .home-text-container .white-box .underline:after {
@@ -151,6 +170,16 @@
     position: absolute;
     background-size: cover;
     z-index: -1; }
+    .contact-page-container .contact-page-bg:after {
+      content: " ";
+      z-index: 10;
+      display: block;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.5); }
     @media screen and (max-width: 900px) {
       .contact-page-container .contact-page-bg {
         background-position-x: 50%;
@@ -168,7 +197,9 @@
     .contact-page-container .contact-page-text h2,
     .contact-page-container .contact-page-text h3,
     .contact-page-container .contact-page-text h4 {
-      color: #00032c !important; }
+      color: white; }
+    .contact-page-container .contact-page-text h1 {
+      color: lightblue !important; }
     .contact-page-container .contact-page-text #by-apt-text {
       font-weight: bold;
       margin: 1rem; }
@@ -183,7 +214,6 @@
           flex-direction: column; } }
       .contact-page-container .contact-page-text .contact-row h2 {
         margin: 0 2rem 0 0;
-        color: #00032c;
         font-weight: bold;
         padding: 0 1rem; }
       .contact-page-container .contact-page-text .contact-row i {
@@ -258,7 +288,7 @@
     color: white; }
   .pricing-page-container h1 {
     font-size: 3rem;
-    color: #3a3c5c !important;
+    color: lightblue;
     font-weight: bold; }
   .pricing-page-container #payment {
     color: white !important; }
@@ -270,6 +300,16 @@
     position: absolute;
     background-size: cover;
     z-index: -1; }
+    .pricing-page-container .pricing-page-bg:after {
+      content: " ";
+      z-index: 10;
+      display: block;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.5); }
   .pricing-page-container .pricing-content {
     flex-direction: column;
     align-items: center;

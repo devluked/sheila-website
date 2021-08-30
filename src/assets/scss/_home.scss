@@ -12,7 +12,7 @@
     h2,
     h3,
     h4 {
-      color: #3a3c5c !important;
+      color: white !important;
     }
   }
 
@@ -21,6 +21,18 @@
     height: 100%;
     width: 100%;
     background: url("../photos/lambo.png");
+
+    &:after {
+      content: " ";
+      z-index: 10;
+      display: block;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
 
     @include media-sm-max {
       background-position-x: 20%;
@@ -43,11 +55,14 @@
     @include media-med-max {
       font-size: 6rem;
     }
+    @include media-md-max-height {
+      font-size: 6rem;
+    }
 
     @include media-sm-max {
       font-size: 2rem;
       margin: 0.5rem;
-      color: #3a3c5c !important;
+      color: lightblue !important;
     }
     margin: 1rem;
     font-size: 8rem;
@@ -133,6 +148,10 @@
           padding-top: 0px;
           color: white;
         }
+
+        @include media-md-max-height {
+          font-size: 2rem;
+        }
       }
 
       #i-can-text {
@@ -149,6 +168,10 @@
           font-size: 1rem;
           margin: 1rem;
           color: white;
+        }
+
+        @include media-md-max-height {
+          font-size: 1.5rem;
         }
       }
 

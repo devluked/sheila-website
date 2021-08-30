@@ -16,6 +16,18 @@
     background-size: cover;
     z-index: -1;
 
+    &:after {
+      content: " ";
+      z-index: 10;
+      display: block;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
     @include media-sm-max {
       background-position-x: 50%;
       background-position-y: 75% !important;
@@ -35,7 +47,11 @@
     h2,
     h3,
     h4 {
-      color: #00032c !important;
+      color: rgb(255, 255, 255);
+    }
+
+    h1 {
+      color: lightblue !important;
     }
 
     #by-apt-text {
@@ -56,7 +72,7 @@
 
       h2 {
         margin: 0 2rem 0 0;
-        color: #00032c;
+
         font-weight: bold;
         padding: 0 1rem;
       }

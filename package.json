@@ -1,6 +1,5 @@
 {
   "name": "sheila-website",
-  "homepage": "https://devluked.github.io/sheila-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
