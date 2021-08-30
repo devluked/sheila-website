@@ -139,6 +139,9 @@
         font-size: 3rem;
         margin: 1rem;
         color: rgb(66, 66, 66);
+        @include media-xxsm-max {
+          font-size: 1.25rem !important;
+        }
         @include media-med-max {
           font-size: 2rem;
         }

@@ -112,6 +112,9 @@
         font-size: 3rem;
         margin: 1rem;
         color: #424242; }
+        @media screen and (max-width: 586px) {
+          .home-page-container .home-text-container .white-box #years-text {
+            font-size: 1.25rem !important; } }
         @media screen and (max-width: 1200px) {
           .home-page-container .home-text-container .white-box #years-text {
             font-size: 2rem; } }
@@ -320,7 +323,7 @@
       @media screen and (max-width: 586px) {
         .pricing-page-container .pricing-content #main-text {
           margin-top: 25%;
-          font-size: 2.5rem; } }
+          font-size: 2.2rem; } }
     .pricing-page-container .pricing-content .projects {
       display: flex;
       align-items: center;
