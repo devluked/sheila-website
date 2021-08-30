@@ -32,9 +32,9 @@ function App() {
           <Route path="/pricing">
             <Pricing />
           </Route>
-          <Route path="/about">
+          {/*Route path="/about">
             <About />
-          </Route>
+  </Route>*/}
         </Switch>
       </div>
     </Router>
